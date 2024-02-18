@@ -31,8 +31,7 @@ public class UserDto
 
     @NotBlank
     private String lastName;
-
-    @JsonIgnore
+    
     @Size(min = 4, max = 10, message = "password must be >4 and <10 char")
     private String password;
 
